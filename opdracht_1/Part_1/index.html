@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulier Opdracht 1 - Webtech</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+  </head>
+  <body class="container-fluid">
+    <div class="row">
+      <div class="col-md">
+        <h1>Vul onderstaande gegevens in</h1>
+        <form>
+          <div class="from-group">
+            <label for="email_field">E-mailadres</label>
+            <input
+              class="form-control"
+              type="email"
+              id="email_field"
+              required
+              minlength="10"
+              maxlength="100"
+              placeholder="E-mailadres"
+            />
+            <small class="form-text text-muted"
+              >Wij geven uw persoonlijke gegevens nooit door aan andere
+              organisaties
+            </small>
+          </div>
+          <div class="from-group">
+            <label for="password_field">Wachtwoord</label>
+            <input
+              class="form-control"
+              type="password"
+              id="password"
+              required
+              minlength="10"
+              maxlength="100"
+              placeholder="Wachtwoord"
+            />
+          </div>
+          <div class="from-group">
+            <label for="payment_selection">Betaalwijze</label>
+            <select
+              class="form-control"
+              type=""
+              id="payment_selection"
+              required
+              minlength="10"
+              maxlength="100"
+              placeholder="Wachtwoord"
+            >
+              <option>iDeal</option>
+              <option>PayPal</option>
+              <option>Bank overschrijving</option>
+              <option>Visa</option>
+              <option>MasterCard</option>
+              <option>Cadeaukaart</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect2"
+              >Welke instrumenten bespeelt u</label
+            >
+            <select
+              multiple
+              class="form-control"
+              id="exampleFormControlSelect2"
+            >
+              <option>Piano</option>
+              <option>Kerkorgel</option>
+              <option>Viool</option>
+              <option>Didgeridoo</option>
+              <option>Gitaar</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1"
+              >Eventuele op- of aanmerkingen:</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opties"
+              id="optie-1"
+              value="optie-1"
+              checked
+            />
+            <label
+              >Er is al een selectie gemaakt voor u - dat is een uitstekende
+              keuze</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opties"
+              id="optie-2"
+              value="optie-2"
+              checked
+            />
+            <label
+              >Wordt er voor optie 2 gekozen, wordt de keuze voor optie 1
+              ongedaan gemaakt.</label
+            >
+          </div>
+          <div class="form-check disabled">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opties"
+              id="optie-1"
+              value="optie-1"
+              disabled
+            />
+            <label class="form-check-label" for="exampleRadios3">
+              Optie drie kan niet gekozen worden
+            </label>
+          </div>
+          <div class="from-group form-check-inline">
+            <input type="checkbox" class="form-check-input" /><label
+              class="form-check-label"
+              >ik heb geen zin om de algemene voorwaarden te lezen</label
+            >
+          </div>
+          <div class="from-group">
+            <button
+              class="btn btn-primary"
+              type="submit"
+              class="form-check-input"
+            >
+              Verstuur
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSbgTSeYYRAAAeOP1iNFE-ZuMgs8B4WtDFQ&s" alt="First slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://static.vecteezy.com/system/resources/thumbnails/007/234/162/small_2x/bengal-cat-resting-on-the-couch-funny-with-glasses-photo.jpg" alt="Second slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*" alt="Third slide" />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<script>
+  // Get the carousel element
+  const myCarousel = $('#myCarousel');
+
+  // Handle Previous button
+  document.getElementById('prevBtn').addEventListener('click', function() {
+    myCarousel.carousel('prev');
+  });
+
+  // Handle Next button
+  document.getElementById('nextBtn').addEventListener('click', function() {
+    myCarousel.carousel('next');
+  });
+
+  // Handle Pause button
+  document.getElementById('pauseBtn').addEventListener('click', function() {
+    myCarousel.carousel('pause');
+  });
+
+  // Handle Play button
+  document.getElementById('playBtn').addEventListener('click', function() {
+    myCarousel.carousel('cycle');
+  });
+</script>

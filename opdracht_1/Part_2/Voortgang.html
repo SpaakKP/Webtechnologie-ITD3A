@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* Custom styling for the expanding search bar */
+      .search-input {
+        width: 0;
+        transition: width 0.4s ease-in-out;
+      }
+
+      .search-input:focus {
+        width: 200px; /* De breedte die de zoekbalk krijgt wanneer deze geselecteerd wordt */
+      }
+
+      .navbar-nav .nav-item {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Boostrap Heroes</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <!-- Home -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+
+              <!-- Voortgang met dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="voortgangDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Voortgang
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="voortgangDropdown">
+                  <li><a class="dropdown-item" href="#">Statistieken</a></li>
+                  <li><a class="dropdown-item" href="#">Toetsen</a></li>
+                  <li><a class="dropdown-item" href="#">Certificaten</a></li>
+                </ul>
+              </li>
+
+              <!-- Lessen met dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="lessenDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Lessen
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="lessenDropdown">
+                  <li><a class="dropdown-item" href="#">Alle Lessen</a></li>
+                  <li><a class="dropdown-item" href="#">Favorieten</a></li>
+                </ul>
+              </li>
+
+              <!-- Winkel met dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="winkelDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Winkel
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="winkelDropdown">
+                  <li><a class="dropdown-item" href="#">Producten</a></li>
+                  <li><a class="dropdown-item" href="#">Mijn Aankopen</a></li>
+                </ul>
+              </li>
+            </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control search-input"
+                  type="search"
+                  placeholder="Zoeken"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Zoek
+                </button>
+              </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <p>
+      Geen content op deze pagina, wel een ReadMe in de git.
+    </p>
+  </body>
+</html>
