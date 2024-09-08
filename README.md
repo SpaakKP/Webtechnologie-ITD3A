@@ -10,7 +10,7 @@ Leuke opdracht, het doel was om een inleidende cursus te maken, echter zat ik al
 3. Formulier met controls 
 4. validatie
 >[!NOTE]
-> In deel 1 is bewezen dat het formulier werkt met validatie, in deel 2 van de opdracht is het novalidate argument toegevoegd aan ```<form>``` om de verstuur knop werkend te krijgen.  
+> In deel 1 is bewezen dat het formulier werkt met validatie, in deel 2 van de opdracht is het novalidate argument toegevoegd aan ```<form>``` om de verstuur knop werkend te krijgen. Zonder hier logica hierachter te bouwen.
 5. Dropdowns
 6. Verschillende lettertypen
 7. Mogelijkheid om in te loggen
