@@ -31,11 +31,9 @@ if ($file !== false) {
     if (str_contains($_GET['active_file'], "gegevens") === true) {
         $headers = fgetcsv($file);
         $separator = ",";
-//        setlocale(LC_MONETARY, "en_US");
     } else {
         $headers = fgetcsv($file, separator: "\t");
         $separator = "\t";
-//        setlocale(LC_MONETARY, "nl_NL");
     }
 
     print("<head><title>Inkomsten</title><link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet''></head>");
@@ -55,8 +53,6 @@ if ($file !== false) {
     while (($data = fgetcsv($file, separator: $separator)) !== false) {
         $date = date_format(date_create($data[0]), 'd-F-Y');
         $numeric_earning = str_replace(["€"], [""], $data[3]);
-//        $numeric_earning = number_format($numeric_earning, 2);
-
 
         $profit = (float)$profit + (float)$numeric_earning;
         if($numeric_earning > 0) {
