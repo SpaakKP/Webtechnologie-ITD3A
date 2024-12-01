@@ -25,7 +25,7 @@ for ($file = 2; $file < count($listOfFiles); $file++) {
 $file = fopen(FILES_PATH . $_GET["active_file"], 'r'); // 'r' mode for read
 // Check if the file was opened successfully
 if ($file !== false) {
-    $profit = (float)0.00;
+    $profit = 0.00;
 
 
     if (str_contains($_GET['active_file'], "gegevens") === true) {
